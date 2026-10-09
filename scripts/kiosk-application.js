@@ -995,6 +995,8 @@ window.Kiosk = {
   };
   kioskApplication.enterIdle = () => {
     kioskApplication.saveScrollPositions();
+    // The fixed Idle frame starts at the top of the shared canvas.
+    kioskApplication.getPageScroller().scrollTop = 0;
     kioskApplication.stopVideos();
     kioskApplication.resetSessionState();
     kioskApplication.state.idle = true;
@@ -1406,7 +1408,6 @@ window.Kiosk = {
     canvas.style.transform = `scale(${kioskApplication.scale})`;
     wrapper.style.width = 2160 * kioskApplication.scale + "px";
     wrapper.style.height = Math.max(3840, canvas.offsetHeight) * kioskApplication.scale + "px";
-    document.getElementById("idle-root").style.setProperty("--idle-scale", kioskApplication.scale);
   };
   // Font loading and generated details can change the unscaled content height.
   const canvasObserver = new ResizeObserver(kioskApplication.resizeCanvasToViewport);
