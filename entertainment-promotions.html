@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>กีฬาและ Entertainment — AIS Vertical TV Pad V1.02m</title>
+    <link rel="stylesheet" href="styles/kiosk-styles.css" />
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/kiosk-application.js"></script>
+  </head>
+  <body data-current-page="entertainment">
+    <main class="kiosk-viewport" id="viewport">
+      <div class="kiosk-scaled-container" id="wrapper">
+        <div class="kiosk-canvas" id="canvas">
+          <section
+            class="kiosk-screen"
+            id="page-entertainment"
+            data-title="กีฬาและ Entertainment"
+            data-page="entertainment"
+            tabindex="-1"
+            aria-label="กีฬาและ Entertainment"
+          >
+            <div class="kiosk-page">
+              <div data-navbar></div>
+              <div class="entertainment-hero">
+                <div class="entertainment-hero__image">
+                  <img
+                    alt=""
+                    src="assets/images/entertainment-promotion-banner.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+              </div>
+              <div class="entertainment-heading">
+                <h1 class="entertainment-heading__title heading-title">รวมกีฬาและ Content Entertainment</h1>
+              </div>
+              <div class="entertainment-feature-row">
+                <a
+                  data-action="feature"
+                  aria-label="ความบันเทิงเอเชีย"
+                  class="interactive entertainment-feature-card"
+                  data-feature-id="asian"
+                  href="welcome-packages.html#welcome"
+                >
+                  <div class="entertainment-feature-card__asian-image">
+                    <img
+                      alt=""
+                      src="assets/images/asian-entertainment-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+                <a
+                  data-action="feature"
+                  aria-label="5G Backup"
+                  class="interactive entertainment-feature-card--compact"
+                  data-feature-id="backup"
+                  href="welcome-packages.html#welcome/features/backup"
+                >
+                  <div class="entertainment-feature-card__backup-image">
+                    <img
+                      alt=""
+                      src="assets/images/backup-internet-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="entertainment-feature-row">
+                <a
+                  data-action="feature"
+                  aria-label="BYOD"
+                  class="interactive entertainment-feature-card--wide"
+                  href="welcome-packages.html#welcome/features/byod"
+                  data-feature-id="byod"
+                >
+                  <div class="entertainment-feature-card__byod-image">
+                    <img
+                      alt=""
+                      src="assets/images/bring-your-own-router-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+                <a
+                  data-action="feature"
+                  aria-label="บริการดูแลบ้าน"
+                  class="interactive entertainment-feature-card--square"
+                  href="welcome-packages.html#welcome"
+                  data-feature-id="insurance"
+                >
+                  <div class="entertainment-feature-card__insurance-image">
+                    <img
+                      alt=""
+                      src="assets/images/home-insurance-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="entertainment-feature-row">
+                <a
+                  data-action="feature"
+                  aria-label="FibreLAN"
+                  class="interactive entertainment-feature-card--wide"
+                  href="welcome-packages.html#welcome"
+                  data-feature-id="lan"
+                >
+                  <div class="entertainment-feature-card__lan-image">
+                    <img
+                      alt=""
+                      src="assets/images/home-fibre-network-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+                <a
+                  data-action="feature"
+                  aria-label="Super FAST Plus"
+                  class="interactive entertainment-feature-card--square"
+                  href="welcome-packages.html#welcome"
+                  data-feature-id="superfast"
+                >
+                  <div class="entertainment-feature-card__superfast-image">
+                    <img
+                      alt=""
+                      src="assets/images/super-fast-internet-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <div class="visually-hidden" id="announcer" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+    <div id="idle-root" hidden></div>
+    <noscript><p class="startup-message">ไม่สามารถเริ่มระบบได้ กรุณาติดต่อเจ้าหน้าที่</p></noscript>
+  </body>
+</html>

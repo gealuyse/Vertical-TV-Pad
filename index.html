@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>หน้าแรก — AIS Vertical TV Pad V1.02m</title>
+    <link rel="stylesheet" href="styles/kiosk-styles.css" />
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/kiosk-application.js"></script>
+  </head>
+  <body data-current-page="home">
+    <main class="kiosk-viewport" id="viewport">
+      <div class="kiosk-scaled-container" id="wrapper">
+        <div class="kiosk-canvas" id="canvas">
+          <section
+            class="kiosk-screen"
+            id="page-home"
+            data-title="หน้าแรก"
+            data-page="home"
+            tabindex="-1"
+            aria-label="หน้าแรก"
+          >
+            <div class="home-page">
+              <div class="brand-section__logo">
+                <img
+                  alt=""
+                  src="assets/images/ais-brand-logo.svg"
+                  draggable="false"
+                  class="media-layer"
+                />
+              </div>
+              <div
+                aria-label="วิดีโอแบรนด์"
+                class="brand-video__container"
+                data-inline-video="brand"
+              >
+                <img
+                  src="assets/images/home-brand-video-poster.jpg"
+                  alt=""
+                  draggable="false"
+                  class="media-cover"
+                />
+              </div>
+              <a
+                data-action="navigate"
+                aria-label="กีฬาและ Entertainment"
+                class="interactive entertainment-promotion-banner"
+                href="entertainment-promotions.html#entertainment"
+                data-page="entertainment"
+              >
+                <div class="entertainment-promotion-banner__image">
+                  <img
+                    alt=""
+                    src="assets/images/entertainment-promotion-banner.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+              </a>
+              <h1 data-bind="brandConcept" class="brand-section__concept"></h1>
+              <a
+                data-action="navigate"
+                aria-label="เลือกประเภทธุรกิจ SME"
+                class="interactive business-promotion-banner"
+                href="business-types.html#sme-business"
+                data-page="sme-business"
+              >
+                <div class="business-promotion-banner__base-image">
+                  <img
+                    alt=""
+                    src="assets/images/business-banner-background.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+                <div class="business-promotion-banner__overlay-image">
+                  <img
+                    alt=""
+                    src="assets/images/business-banner-overlay.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+              </a>
+              <a
+                aria-label="ดูอุปกรณ์ Smart Home"
+                class="interactive smart-home-preview"
+                href="smart-home.html#smart-home"
+                data-page="smart-home"
+                data-action="navigate"
+              >
+                <div class="smart-home-preview__device-image">
+                  <img
+                    alt=""
+                    src="assets/images/smart-home-demo-devices.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+                <span class="smart-home-preview__label">ดูอุปกรณ์ Smart Home</span>
+              </a>
+              <a
+                data-action="navigate"
+                aria-label="Smart Home"
+                class="interactive smart-home-promotion-banner"
+                href="smart-home.html#smart-home"
+                data-page="smart-home"
+              >
+                <div class="smart-home-promotion-banner__image">
+                  <img
+                    alt=""
+                    src="assets/images/smart-home-banner.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+              </a>
+            </div>
+          </section>
+          <div class="visually-hidden" id="announcer" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+    <div id="idle-root" hidden></div>
+    <noscript><p class="startup-message">ไม่สามารถเริ่มระบบได้ กรุณาติดต่อเจ้าหน้าที่</p></noscript>
+  </body>
+</html>

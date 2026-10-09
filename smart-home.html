@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Smart Home — AIS Vertical TV Pad V1.02m</title>
+    <link rel="stylesheet" href="styles/kiosk-styles.css" />
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/kiosk-application.js"></script>
+  </head>
+  <body data-current-page="smart-home">
+    <main class="kiosk-viewport" id="viewport">
+      <div class="kiosk-scaled-container" id="wrapper">
+        <div class="kiosk-canvas" id="canvas">
+          <section
+            class="kiosk-screen"
+            id="page-smart-home"
+            data-title="Smart Home"
+            data-page="smart-home"
+            tabindex="-1"
+            aria-label="Smart Home"
+          >
+            <div class="kiosk-page">
+              <h1 class="visually-hidden">Smart Home</h1>
+              <div data-navbar></div>
+              <div class="smart-home-hero">
+                <div class="smart-home-hero__image">
+                  <img
+                    alt=""
+                    src="assets/images/smart-home-banner.webp"
+                    draggable="false"
+                    class="media-cover"
+                  />
+                </div>
+              </div>
+              <div class="smart-home-heading">
+                <h2 class="smart-home-heading__title heading-section">รายการสินค้า</h2>
+              </div>
+              <div class="smart-home-catalog">
+                <article class="smart-home-catalog-card">
+                  <div class="smart-home-catalog-card__image">
+                    <img src="assets/images/aqara-g100.png" alt="Aqara Smart Camera G100 White" draggable="false">
+                  </div>
+                  <div class="smart-home-catalog-card__body">
+                    <h3 class="smart-home-catalog-card__description heading-card">
+                      <span class="smart-home-catalog-card__brand">Aqara</span>
+                      <span class="smart-home-catalog-card__model">Smart Camera<br>G100 White</span>
+                    </h3>
+                    <p class="smart-home-catalog-card__price">1,490 บาท</p>
+                  </div>
+                </article>
+                <article class="smart-home-catalog-card">
+                  <div class="smart-home-catalog-card__image">
+                    <img src="assets/images/aqara-g3.png" alt="Aqara Smart Camera Hub G3 White" draggable="false">
+                  </div>
+                  <div class="smart-home-catalog-card__body">
+                    <h3 class="smart-home-catalog-card__description heading-card">
+                      <span class="smart-home-catalog-card__brand">Aqara</span>
+                      <span class="smart-home-catalog-card__model">Smart Camera<br>Hub G3 White</span>
+                    </h3>
+                    <p class="smart-home-catalog-card__price">4,190 บาท</p>
+                  </div>
+                </article>
+                <article class="smart-home-catalog-card">
+                  <div class="smart-home-catalog-card__image">
+                    <img src="assets/images/xiaomi-c400.webp" alt="Xiaomi Smart Camera C400" draggable="false">
+                  </div>
+                  <div class="smart-home-catalog-card__body">
+                    <h3 class="smart-home-catalog-card__description heading-card">
+                      <span class="smart-home-catalog-card__brand">Xiaomi</span>
+                      <span class="smart-home-catalog-card__model">Smart Camera<br>C400</span>
+                    </h3>
+                    <p class="smart-home-catalog-card__price">1,199 บาท</p>
+                  </div>
+                </article>
+              </div>
+              <div class="smart-home-heading">
+                <h2 class="smart-home-heading__title heading-section">แพ็กเกจแนะนำ</h2>
+              </div>
+              <div class="smart-home-product-row">
+                <div
+                  aria-label="แพ็กเกจ Smart Home แนะนำ 1"
+                  class="smart-home-product-card"
+                  data-product-id="recommended-1"
+                  role="group"
+                >
+                  <div class="smart-home-product-card__recommended-camera-image">
+                    <img
+                      alt=""
+                      src="assets/images/smart-home-installment-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </div>
+                <div
+                  aria-label="แพ็กเกจ Smart Home แนะนำ 2"
+                  class="smart-home-product-card"
+                  data-product-id="recommended-2"
+                  role="group"
+                >
+                  <div class="smart-home-product-card__recommended-router-image">
+                    <img
+                      alt=""
+                      src="assets/images/smart-home-soundbar-promotion.webp"
+                      draggable="false"
+                      class="media-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="visually-hidden" id="announcer" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+    <div id="idle-root" hidden></div>
+    <noscript><p class="startup-message">ไม่สามารถเริ่มระบบได้ กรุณาติดต่อเจ้าหน้าที่</p></noscript>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>รายละเอียดรายการ — AIS Vertical TV Pad V1.02m</title>
+    <link rel="stylesheet" href="styles/kiosk-styles.css" />
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/kiosk-application.js"></script>
+  </head>
+  <body data-current-page="detail">
+    <main class="kiosk-viewport" id="viewport">
+      <div class="kiosk-scaled-container" id="wrapper">
+        <div class="kiosk-canvas" id="canvas">
+          <section
+            class="kiosk-screen"
+            id="page-detail"
+            data-title="รายละเอียดรายการ"
+            data-page="detail"
+            tabindex="-1"
+            aria-label="รายละเอียดรายการ"
+          >
+            <div class="kiosk-page detail-page">
+              <div data-navbar></div>
+              <div class="package-details-content" data-detail-content></div>
+            </div>
+          </section>
+          <div class="visually-hidden" id="announcer" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+    <div id="idle-root" hidden></div>
+    <noscript><p class="startup-message">ไม่สามารถเริ่มระบบได้ กรุณาติดต่อเจ้าหน้าที่</p></noscript>
+  </body>
+</html>

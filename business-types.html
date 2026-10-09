@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>เลือกประเภทธุรกิจ SME — AIS Vertical TV Pad V1.02m</title>
+    <link rel="stylesheet" href="styles/kiosk-styles.css" />
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/kiosk-application.js"></script>
+  </head>
+  <body data-current-page="sme-business">
+    <main class="kiosk-viewport" id="viewport">
+      <div class="kiosk-scaled-container" id="wrapper">
+        <div class="kiosk-canvas" id="canvas">
+          <section
+            class="kiosk-screen"
+            id="page-sme-business"
+            data-title="เลือกประเภทธุรกิจ SME"
+            data-page="sme-business"
+            tabindex="-1"
+            aria-label="เลือกประเภทธุรกิจ SME"
+          >
+            <div class="kiosk-page">
+              <div data-navbar></div>
+              <div class="business-types-heading">
+                <h1 class="business-types-heading__title heading-title">Welcome to AIS SME</h1>
+                <p
+                  class="business-types-heading__description business-benefit__description--support"
+                >
+                  บริการอินเทอร์เน็ตคุณภาพสูงสำหรับธุรกิจ เร็ว แรง เสถียร รองรับทุกความต้องการใช้งาน
+                </p>
+              </div>
+              <div class="business-benefits">
+                <h2 class="business-benefits__title heading-section">จุดเด่นบริการ</h2>
+                <div class="business-benefits__row">
+                  <div class="business-benefit">
+                    <div class="business-benefit__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-network-speed-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                    <div class="business-benefit__body">
+                      <h3 class="business-benefit__title heading-card">รวดเร็ว เสถียรสูงสุด</h3>
+                      <p class="business-benefit__description">
+                        ด้วยเทคโนโลยีเครือข่าย
+                        <br aria-hidden />
+                        ไฟเบอร์
+                      </p>
+                    </div>
+                  </div>
+                  <div class="business-benefit">
+                    <div class="business-benefit__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-security-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                    <div class="business-benefit__body">
+                      <h3 class="business-benefit__title heading-card">ปลอดภัย</h3>
+                      <p class="business-benefit__description">
+                        ด้วยระบบป้องกัน 3 ชั้น
+                        <br aria-hidden />
+                        มั่นใจกว่า
+                      </p>
+                    </div>
+                  </div>
+                  <div class="business-benefit">
+                    <div class="business-benefit__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-support-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                    <div class="business-benefit__body">
+                      <h3 class="business-benefit__title heading-card">ดูแล 24 ชั่วโมง</h3>
+                      <p class="business-benefit__description">
+                        ทีมผู้เชี่ยวชาญพร้อม
+                        <br aria-hidden />
+                        แก้ปัญหาอย่างรวดเร็ว
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="business-types-heading">
+                <h2 class="business-type-selection__title heading-section">ธุรกิจของคุณคืออะไร?</h2>
+                <p class="business-type-selection__description">
+                  เลือกประเภทธุรกิจ เพื่อดูแพ็กเกจและโซลูชันที่เหมาะกับคุณ
+                </p>
+              </div>
+              <div class="business-type-selection__row">
+                <div class="business-type-card">
+                  <div class="business-type-card__cover">
+                    <div class="business-type-card__image-rotation">
+                      <img
+                        alt=""
+                        src="assets/images/business-type-card-background.svg"
+                        draggable="false"
+                        class="media-layer"
+                      />
+                    </div>
+                    <div class="business-type-card__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-cafe-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="business-type-card__name heading-card">ร้านอาหาร / คาเฟ่</h3>
+                  <button
+                    data-action="business"
+                    aria-label="ร้านอาหาร / คาเฟ่"
+                    class="interactive business-type-card__details-link"
+                    data-business-id="cafe"
+                    type="button"
+                  >
+                    <span class="business-type-card__link-label">รายละเอียดเพิ่มเติม</span>
+                  </button>
+                </div>
+                <div class="business-type-card">
+                  <div class="business-type-card__cover">
+                    <div class="business-type-card__image-rotation">
+                      <img
+                        alt=""
+                        src="assets/images/business-type-card-background.svg"
+                        draggable="false"
+                        class="media-layer"
+                      />
+                    </div>
+                    <div class="business-type-card__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-hotel-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="business-type-card__name heading-card">โรงแรม / รีสอร์ท</h3>
+                  <button
+                    data-action="business"
+                    aria-label="โรงแรม / รีสอร์ท"
+                    class="interactive business-type-card__details-link"
+                    data-business-id="hotel"
+                    type="button"
+                  >
+                    <span class="business-type-card__link-label">รายละเอียดเพิ่มเติม</span>
+                  </button>
+                </div>
+              </div>
+              <div class="business-type-selection__row">
+                <div class="business-type-card">
+                  <div class="business-type-card__cover">
+                    <div class="business-type-card__image-rotation">
+                      <img
+                        alt=""
+                        src="assets/images/business-type-card-background.svg"
+                        draggable="false"
+                        class="media-layer"
+                      />
+                    </div>
+                    <div class="business-type-card__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-office-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="business-type-card__name heading-card">ออฟฟิศ / สำนักงาน / โรงงาน</h3>
+                  <button
+                    data-action="business"
+                    aria-label="ออฟฟิศ / สำนักงาน / โรงงาน"
+                    class="interactive business-type-card__details-link"
+                    data-business-id="office"
+                    type="button"
+                  >
+                    <span class="business-type-card__link-label">รายละเอียดเพิ่มเติม</span>
+                  </button>
+                </div>
+                <div class="business-type-card">
+                  <div class="business-type-card__cover">
+                    <div class="business-type-card__image-rotation">
+                      <img
+                        alt=""
+                        src="assets/images/business-type-card-background.svg"
+                        draggable="false"
+                        class="media-layer"
+                      />
+                    </div>
+                    <div class="business-type-card__image-frame">
+                      <img
+                        alt=""
+                        src="assets/images/business-clinic-illustration.webp"
+                        draggable="false"
+                        class="media-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="business-type-card__name heading-card">คลินิก / โรงเรียนกวดวิชา</h3>
+                  <button
+                    data-action="business"
+                    aria-label="คลินิก / โรงเรียนกวดวิชา"
+                    class="interactive business-type-card__details-link"
+                    data-business-id="clinic"
+                    type="button"
+                  >
+                    <span class="business-type-card__link-label">รายละเอียดเพิ่มเติม</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="visually-hidden" id="announcer" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+    <div id="idle-root" hidden></div>
+    <noscript><p class="startup-message">ไม่สามารถเริ่มระบบได้ กรุณาติดต่อเจ้าหน้าที่</p></noscript>
+  </body>
+</html>
